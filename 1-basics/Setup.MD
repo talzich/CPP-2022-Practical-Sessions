@@ -21,7 +21,7 @@ ___
 
 
 
-## Guides
+## Guides 
 1. [linux setup](https://www.youtube.com/watch?v=BgGrrpWI7cQ)
 
 2. [macOS setup](https://www.youtube.com/watch?v=f0vVV4NPmjQ&t=515s)
