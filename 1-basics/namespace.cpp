@@ -6,21 +6,15 @@ namespace a
         std::cout << 'a' << std::endl;
     }
 }
-
 namespace b
 {
     void foo()
     {
         std::cout << 'b' << std::endl;
     }
-
-    void bar(){
-
-    }
 }
-
-using namespace a;
 using namespace b;
+using namespace a;
 
 int main(){
     // Create two different namespaces and in each one write a function to print the name
@@ -34,7 +28,7 @@ int main(){
     
     // Play with it!
 
-    foo();
+    a::foo();
 
     return 0;
 }
