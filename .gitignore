@@ -3,3 +3,6 @@
 
 # macOS directories
 **/.DS_Store
+
+# Any file that is not in iCloud
+*.nosync
