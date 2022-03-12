@@ -16,7 +16,7 @@ Table of contents:
 
 * [Week 1](1-basics/)
 * [Week 2](2-classes/)
-* [Week 3](3/)
+* [Week 3](3-ptr-ref/)
 * [Week 4](4/)
 * [Week 5](5/)
 * [Week 6](6/)
