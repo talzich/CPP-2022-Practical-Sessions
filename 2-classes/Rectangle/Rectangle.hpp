@@ -6,22 +6,24 @@
 
 namespace zich
 {
-    class Rectangle
-    {
-    private:
-        double height, width;
-        static std::string color;
+    class Rectangle{
+        private:
+            //private fields and methods
+            double height, width;
+            std::string static color;
+        public:
+            Rectangle(double height, double width);
 
-    public:
-        Rectangle(double height, double width);
-        ~Rectangle();
+            double get_height();
 
-        double get_height();
-        double get_width();
+            double get_width();
 
-        void set_height(double height);
-        void set_width(double width);
+            static std::string get_color();
 
-        static void set_color(std::string color);
+            void set_height(double height);
+
+            void set_width(double width);
+
+            static void set_color(std::string color);
     };
 }

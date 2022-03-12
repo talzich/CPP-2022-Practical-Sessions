@@ -1,17 +1,19 @@
-CXX = clang++
-CXXFLAGS = -std=c++2a
+# https://www.youtube.com/watch?v=GExnnTaBELk&t=603s
+
+CXX=clang++
+CFLAGS=-std=c++2a
 
 all: prog
 	./prog
 
-prog: Rectangle.o main.o
-	$(CXX) $(CXXFLAGS) Rectangle.o main.o -o prog
+prog: main.o Rectangle.o
+	$(CXX) $(CFLAGS) main.o Rectangle.o -o prog
+
+main.o: main.cpp Rectangle.hpp
+	$(CXX) $(CFLAGS) -c main.cpp -o main.o
 
 Rectangle.o: Rectangle.cpp Rectangle.hpp
-	$(CXX) $(CXXFLAGS) -c Rectangle.cpp -o Rectangle.o
-
-main.o: Rectangle.hpp main.cpp
-	$(CXX) $(CXXFLAGS) -c main.cpp -o main.o
+	$(CXX) $(CFLAGS) -c Rectangle.cpp -o Rectangle.o
 
 clean:
-	rm -rf *.o *.out prog
+	rm -rf *.o prog
