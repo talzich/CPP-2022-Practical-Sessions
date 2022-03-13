@@ -4,7 +4,7 @@ using namespace std;
 int main(){
 	
 	int* p1; // -> pointer
-    //int& r1; // -> reference, compile error
+    // int& r1; // -> reference, compile error
 
     int num = 1, num2 = 999;
 

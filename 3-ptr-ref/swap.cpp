@@ -1,6 +1,22 @@
 #include <iostream>
 
+void swap(int *a, int *b){
+    int tmp = *a;
+    *a = *b;
+    *b = tmp;
+}
+
+void swap(int &a, int &b){
+    int tmp = a;
+    a = b;
+    b = tmp;
+}
 
 int main(){
-    // write a function to swap two integers using pointers and one using reference
+    int a = 1, b = 2;
+    std::cout << "a = " << a << " b = " << b << std::endl;
+    swap(&a, &b);
+    std::cout << "a = " << a << " b = " << b << std::endl;
+    swap(a, b);
+    std::cout << "a = " << a << " b = " << b << std::endl;
 }

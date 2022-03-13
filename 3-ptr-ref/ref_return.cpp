@@ -29,9 +29,13 @@ int main()
     cout << "g4() = " << g4() << endl;
 
     // g1()=111;
-    g2() = 222;
+    // g2() = 222;
     // g3()=333;
-    g4() = 444;
+
+    // Michael's question
+    // int& x = g4();
+    // std::cout << x << std::endl;
+    // x = 444;
 
     cout << endl
          << "globalnum = " << globalnum << endl;
