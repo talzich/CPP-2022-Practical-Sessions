@@ -7,23 +7,19 @@ int g1()
 {
     return globalnum;
 }
-
-int &g2()
+int& g2()
 {
     return globalnum;
 }
-
 const int &g3()
 {
     return globalnum;
 }
-
 int &g4()
 { // bug
     int localnum = 9999;
     return localnum;
 }
-
 int main()
 {
     cout << "globalnum = " << globalnum << endl;
