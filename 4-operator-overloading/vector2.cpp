@@ -9,6 +9,10 @@
 
 const int ALPHA = 2;
 
+/**
+ * @brief A 2 elements vector class
+ * We will write scalar multiplication and vector add using this class
+ */
 class Vector2{
 
     public:
@@ -50,4 +54,14 @@ int main(){
     // your turn
     // Vector2 v3 = v1 + v2;
     // std::cout << "v3 = (" << v3.x << ", " << v3.y << ')' << std::endl;
+
+    // brackets
+    // try{
+    //     std::cout << "v1[0] = " << v1[0] << std::endl;
+    //     std::cout << "v1[1] = " << v1[1] << std::endl;
+    //     std::cout << "v1[2] = " << v1[2] << std::endl;
+    // }
+    // catch(const char* error){
+    //     std::cout << "Error: " << error << std::endl;
+    // }
 }
