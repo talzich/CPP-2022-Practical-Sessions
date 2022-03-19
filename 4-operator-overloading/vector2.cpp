@@ -7,6 +7,8 @@
  */
 #include <iostream>
 
+const int ALPHA = 2;
+
 class Vector2{
 
     public:
@@ -21,7 +23,6 @@ int main(){
     std::cout << "v2 = (" << v2.x << ", " << v2.y << ')' << std::endl;
 
     // old way
-    const int ALPHA = 2;
     v1.x *= ALPHA;
     v1.y *= ALPHA;
     v2.x *= ALPHA;
