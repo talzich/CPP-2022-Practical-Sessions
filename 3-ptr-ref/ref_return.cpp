@@ -29,7 +29,7 @@ int main()
     cout << "g4() = " << g4() << endl;
 
     // g1()=111;
-    // g2() = 222;
+    g2() = 222;
     // g3()=333;
 
     // Michael's question

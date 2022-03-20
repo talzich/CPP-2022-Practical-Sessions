@@ -16,6 +16,7 @@ std::string operator*(int n, std::string s)
     return result;
 }
 
+
 std::string operator*(std::string s, int n)
 {
     std::string result = "";
@@ -26,8 +27,7 @@ std::string operator*(std::string s, int n)
 
 
 int main(){
-    int x = 2;
+    int x = 3;
     std::string str = "Hello";
-
-    std::cout << str*2 << std::endl;
+    std::cout << x*str << std::endl; 
 }
