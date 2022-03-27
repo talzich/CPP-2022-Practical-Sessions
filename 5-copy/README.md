@@ -1,0 +1,1 @@
+This exercise was influenced by Yan Cherno's [YouTube Video](https://www.youtube.com/watch?v=BvR1Pgzzr38) on Copying.
