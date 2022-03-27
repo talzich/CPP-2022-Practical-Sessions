@@ -24,5 +24,13 @@ int main()
 
     std::cout << "a = " << a << " &a = " << &a << '\n';
     std::cout << "b = " << b << " &b = " << &b << std::endl;
+
+    v2.x = 5;
+    std::cout << "a = " << a << " &a = " << &a << '\n';
+    std::cout << "b = " << b << " &b = " << &b << std::endl;
+
+    std::cout << "v1.x = " << v1.x << '\n';
+    std::cout << "v2.x = " << v2.x << '\n';
+
     return 0;
 }
