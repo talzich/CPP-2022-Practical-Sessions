@@ -48,5 +48,8 @@ int main()
 
     print_name(zich);
     print_name(moshe);
+
+    Person *p = new Student("Leonardo", "da Vinci", 100);
+    print_name(*p);
     return 0;
 }
