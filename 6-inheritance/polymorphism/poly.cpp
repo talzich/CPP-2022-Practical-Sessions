@@ -30,7 +30,7 @@ class Student : public Person
             std::cout << "GPA: " << GPA << std::endl;
         }
 
-        std::string get_name() const { return "Student::Name: " + f_name; }
+        std::string get_name() const override { return "Student::Name: " + f_name; }
 };
 
 void print_name(const Person &p)
@@ -50,6 +50,7 @@ int main()
     print_name(moshe);
 
     Person *p = new Student("Leonardo", "da Vinci", 100);
+    p->print_info();
     print_name(*p);
     return 0;
 }
