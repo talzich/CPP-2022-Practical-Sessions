@@ -16,7 +16,7 @@ int main(){
     Student moshe{"Moshe", "Levi", 82};
     moshe.print_info();
 
-    // print_name(zich);
-    // print_name(moshe);
+    print_name(zich);
+    print_name(moshe);
     return 0;
 }

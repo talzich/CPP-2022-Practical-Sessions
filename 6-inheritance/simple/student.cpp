@@ -9,7 +9,8 @@
 
 #include <iostream>
 namespace zich{
-    Student::Student(std::string f_name, std::string l_name, unsigned short GPA) : Person(f_name, l_name), GPA(GPA) {}
+    Student::Student(std::string f_name, std::string l_name, unsigned short GPA) 
+    : Person(f_name, l_name), GPA(GPA) {}
     
     void Student::print_info()
     {
