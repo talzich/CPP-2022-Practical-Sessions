@@ -19,3 +19,5 @@
 # do
 #     echo $VAR
 # done
+
+for(( i=0; i -le 10; i++ ))

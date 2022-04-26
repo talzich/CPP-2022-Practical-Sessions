@@ -19,3 +19,7 @@ echo $EIGHT
 ARR[7]=e
 
 echo ${ARR[7]}
+
+echo ${ARR[@]} # entire array
+
+echo ${#ARR[@]} # size of array

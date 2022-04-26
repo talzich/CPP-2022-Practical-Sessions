@@ -2,9 +2,12 @@
 
 echo "Please insert a number"
 read NUM
-if [ $NUM -ge 10 ]
+
+if [ $NUM -eq 10 ]
 then
-    echo "number >= 10"
+    echo "Number is greater than 10"
 else
-    echo "number < 10"
+    echo "Number is less than 10"
 fi
+
+
