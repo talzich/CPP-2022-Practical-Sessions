@@ -11,6 +11,7 @@
 
 #include <iostream>
 #include <exception>
+#include <string>
 
 int main()
 {
@@ -18,9 +19,13 @@ int main()
     {
         throw "Error message";
     }
-    catch(const char *c)
+    catch(const std::string s)
     {
-        std::cerr << c << '\n';
+        std::cerr << s << '\n';
+    }
+    catch(...)
+    {
+        std::cerr << "default" << '\n';
     }
     
 }

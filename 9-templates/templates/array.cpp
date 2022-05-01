@@ -11,16 +11,16 @@
 #include <iostream>
 #include <vector>
 
-template<int SIZE>
+template<int SIZE, typename T>
 class Stack
 {
     private:
         int _size;
-        int arr[SIZE];
+        T arr[SIZE];
     public:
         Stack(): _size(0) {}
         
-        bool push(const int &item)
+        bool push(const T &item)
         {
             if(this->isFull())
             {
@@ -31,7 +31,7 @@ class Stack
             return true;
         }
 
-        int pop()
+        T pop()
         {
             if(this->isEmpty())
             {
@@ -48,7 +48,7 @@ int main()
 {
     std::cout << std::boolalpha; // writes true or false to stdout instead of 1 or 0
     
-    Stack<5> s;
+    Stack<5, float> s;
     try
     {
         for(int i = 0; i < 6; ++i)

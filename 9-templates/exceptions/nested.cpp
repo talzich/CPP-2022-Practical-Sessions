@@ -10,12 +10,13 @@
  */
 
 #include <iostream>
+#include <string>
 
 void f()
 {
     try
     {
-        throw "String";
+        throw "Error";
     }
     catch (const char *s)
     {
@@ -44,10 +45,21 @@ int main()
     catch (int i)
     {
         std::cout << "Integer:" << i << " caught by main()\n";
+        try{
+
+        throw i+1;
+        }catch(...)
+        {
+            std::cerr << "default" << '\n'; 
+        }
     }
     catch (const char *s)
     {
         std::cout << "Caught " << s << " in main()\n";
+    }
+    catch(...)
+    {
+        std::cerr << "default" << '\n';
     }
     return 0;
 }
