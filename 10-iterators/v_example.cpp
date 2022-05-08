@@ -23,5 +23,17 @@ int main(){
     {
         std::cout << v[i] << '\n';
     }
+
+    std::cout << "Iterator for loop" << '\n';
+    for(std::vector<int>::iterator it = v.begin(); it != v.end(); ++it)
+    {
+        std::cout << (*it)++ << '\n';
+    }
+
+    std::cout << "Range based for loop" << '\n';
+    for(int element : v)
+    {
+        std::cout << element << '\n';
+    }
     std::cout << std::endl;
 }

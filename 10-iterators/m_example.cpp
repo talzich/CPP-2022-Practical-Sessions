@@ -19,4 +19,25 @@ int main(){
     m["Class"] = 5;
     m["Hi"] = 100;
     m["Zich"] = 2;
+
+    for(std::unordered_map<std::string, int>::iterator it = m.begin();
+        it != m.end();
+        ++it)
+    {
+        std::cout << "key = " << (*it).first << " value = " << (*it).second << '\n';
+    }
+
+
+    for(auto p : m)
+    {
+
+        std::cout << "key = " << p.first << " value = " << p.second << '\n';
+    }
+
+    for (auto [key, value] : m)
+    {
+
+        std::cout << "key = " << key << " value = " << value << '\n';
+    }
+    std::cout << std::endl;
 }
