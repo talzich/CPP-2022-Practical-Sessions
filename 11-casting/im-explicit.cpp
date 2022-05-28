@@ -14,9 +14,13 @@
 int main()
 {
     // implicit int to double and vice versa
-
+    int x = 5; 
+    double y = x;
     // explicit c-style int to double and vice versa
-
+    y = (double)x;
+    
     // explicit cpp-style cast (simple static cast)
+    double z = static_cast<double>(x);
+
     return 0;
 }

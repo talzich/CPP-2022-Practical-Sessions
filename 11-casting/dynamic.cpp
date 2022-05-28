@@ -13,7 +13,7 @@ class DerivedB : public Base
 
 int main()
 {
-    Base *d1 = new Derived();
+    Base *d1 = new DerivedB();
     Derived *d2 = dynamic_cast<Derived*>(d1);
     if(d2)
     {

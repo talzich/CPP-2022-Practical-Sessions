@@ -16,5 +16,9 @@ int main()
 {
     int x = 1;
     const int *y = &x;
+    std::cout << "Old y = " << *y << '\n';
     int *z = const_cast<int *>(y);
+    *z = 51;
+    std::cout << "New y = " << *y << std::endl;
+    std::cout << "x = " << x << std::endl;
 }

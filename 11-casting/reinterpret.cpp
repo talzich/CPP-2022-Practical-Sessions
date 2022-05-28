@@ -12,7 +12,7 @@ int main()
     double *dp = (double*)ip;
     double *ep = reinterpret_cast<double*>(ip);
 
-    std::cout << "i as a double: " << std::setprecision(100) << *dp << " " << *ep << std::endl;
+    std::cout << "i as a double: " << std::setprecision(10) << *dp << " " << *ep << std::endl;
 
     double d = 5.555;
     int &ir = (int &)d;
